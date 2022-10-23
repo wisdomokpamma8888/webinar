@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* 
+input:focus{
+    outline: 2px solid #00f;
+} */
+
+.container{
+    margin: auto;
+    width: 80%;
+}
+
+.form-group{
+    margin: 1rem 0;
+}
+
+.form-container{
+    width: 80%;
+    margin: auto;
+}
+
+.form-container h2{
+    text-transform: capitalize;
+    font-size: 2rem;
+    padding: 2rem 0;
+    padding-bottom: 1rem;
+}
+
+form{
+    display: block;
+    margin-top: 2rem;
+}
+
+form label{
+    font-size: 1rem;
+    display: block;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+
+    font-weight: 600;
+}
+
+/* SUDO ELEMENT */
+/* form label::after{
+    content: "";
+
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(241, 148, 148);
+} */
+
+form label sup{
+    color: #f00;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.form-control{
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #999;
+    padding: 10px 12px;
+    flex: 1;
+}
+
+.form-control::placeholder{
+    color: #8F95A0;
+    /* text-transform: capitalize; */
+}
+
+/* FOCUS */
+/* .form-control:focus{
+    outline: 1px solid blue;
+} */
+
+.mr-2{
+    margin-right: 10px;
+}
+
+.mt-2{
+    margin-top: 20px;
+}
+
+.hr{
+    margin: 3rem 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    border: 0;
+}
+
+.btn-main{
+    display: block;
+    width: 100%;
+    padding: .7rem;
+    color: #fff;
+    background-color: #3445A1;
+    font-weight: 700;
+    border: 1px solid #3445A1;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: .7;
+
+    transition: all .5s ease-in-out;
+}
+
+.btn-main:hover{
+    opacity: 1;
+}
+
+/* Table */
+
+.table-container{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+table{
+    width: auto;
+    overflow: scroll;
+
+    position: relative;
+    transform: translateY(150px);
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+table.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+thead{
+    background: #777;
+    color: #ccc;
+}
+
+th{
+    width: fit-content;
+    padding: .5rem .8rem;
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+.required{
+    border-color: #f00;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 95%;
+    }
+
+    .d-flex{
+        flex-direction: column;
+    }
+    
+    .mr-2{
+        margin-right:0 ;
+    }
+
+    .form-control{
+        margin: .4rem 0;
+    }
+}

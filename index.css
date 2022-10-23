@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 5px;
+   
+}
+.container{
+    width: 50%;
+    min-height: 500px;
+    border: 1px solid #000;
+    margin: 20px auto ;
+}
+.form-input1 input{
+    width: 45%;
+}
+
+.d-flex{
+    display: flex; 
+}
+.header h1{
+    text-align: center;
+}
+.form-input1 label{
+    font-size: 15px;
+    font-weight: bolder;
+    
+    
+}
+
